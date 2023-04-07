@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 7fd49dc5378785f4983b3c3db7cd17e5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 40
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638164901585023122
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  multiSpriteImportData:
+  - name: Mori_idle_Frame_0
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.073529415}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 149
+      width: 73
+      height: 136
+    spriteID: 0c4bee24256eb4d4aa8dd1582f08f167
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 149}
+  - name: Mori_idle_Frame_1
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.073529415}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 293
+      width: 73
+      height: 136
+    spriteID: 3a8dbb5b0260e5b4abb44e3403320a22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 293}
+  - name: Mori_idle_Frame_2
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.073529415}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 4
+      width: 73
+      height: 136
+    spriteID: f68dfa37661a7f541b336441df25491e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 4}
+  - name: Mori_idle_Frame_3
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.06569342}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 297
+      width: 73
+      height: 137
+    spriteID: 9ef7631fdf4c8414bbe62d0416a5493c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 297}
+  - name: Mori_idle_Frame_4
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.0729927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 4
+      width: 73
+      height: 137
+    spriteID: 1b70b1d0211e0d84ab5b6c8d48bd3e31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 4}
+  - name: Mori_idle_Frame_5
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.0729927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 149
+      width: 73
+      height: 137
+    spriteID: b3511de80b62dc84888cb48b63d8a52d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 149}
+  - name: Mori_idle_Frame_6
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.072463766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 151
+      width: 73
+      height: 138
+    spriteID: 22ac98be828422f41873e74fd1d9a194
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 151}
+  - name: Mori_idle_Frame_7
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.0729927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 294
+      width: 73
+      height: 137
+    spriteID: b8f1f835da64e424b8d352ae666363b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 294}
+  - name: Mori_idle_Frame_8
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.064748205}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 73
+      height: 139
+    spriteID: 228c37879b621b34c8a983a474c9f273
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Mori_idle_Frame_9
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.0729927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 4
+      width: 73
+      height: 137
+    spriteID: 16f15fc30070afd4c96086cf720e3304
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 4}
+  - name: Mori_idle_Frame_10
+    originalName: 
+    pivot: {x: 0.49315068, y: -0.073529415}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 148
+      width: 73
+      height: 136
+    spriteID: 5c2db51046882a24abdabded18031565
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 148}
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1119956358
+    name: Mori_idle
+    layerFlags: 0
+    layerType: 0
+    cells:
+    - name: Mori_idle_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 136
+      spriteId: 0c4bee24256eb4d4aa8dd1582f08f167
+    - name: Mori_idle_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 136
+      spriteId: 3a8dbb5b0260e5b4abb44e3403320a22
+    - name: Mori_idle_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 136
+      spriteId: f68dfa37661a7f541b336441df25491e
+    - name: Mori_idle_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 4
+        y: 9
+        width: 73
+        height: 137
+      spriteId: 9ef7631fdf4c8414bbe62d0416a5493c
+    - name: Mori_idle_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 137
+      spriteId: 1b70b1d0211e0d84ab5b6c8d48bd3e31
+    - name: Mori_idle_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 137
+      spriteId: b3511de80b62dc84888cb48b63d8a52d
+    - name: Mori_idle_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 138
+      spriteId: 22ac98be828422f41873e74fd1d9a194
+    - name: Mori_idle_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 137
+      spriteId: b8f1f835da64e424b8d352ae666363b9
+    - name: Mori_idle_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 4
+        y: 9
+        width: 73
+        height: 139
+      spriteId: 228c37879b621b34c8a983a474c9f273
+    - name: Mori_idle_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 137
+      spriteId: 16f15fc30070afd4c96086cf720e3304
+    - name: Mori_idle_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 4
+        y: 10
+        width: 73
+        height: 136
+      spriteId: 5c2db51046882a24abdabded18031565
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
