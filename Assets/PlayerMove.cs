@@ -32,13 +32,12 @@ public class PlayerMove : MonoBehaviour
 
         rb.velocity = new Vector2(movX * moveSpeed, rb.velocity.y);
         
-        //while (Player.isTouching(Tilemap))
-        //{
-            if (isGrounded() && Input.GetButtonDown("Jump"))
+
+        if (isGrounded() && Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
-        //}
+
 
        
 
@@ -61,11 +60,14 @@ public class PlayerMove : MonoBehaviour
         {
             anim.SetBool("running", false);
         }
+
+        anim.SetFloat("jumping", rb.velocity.y);
+
     }
 
     private bool isGrounded()
     {
-        float extraHeight = .5f;
+        float extraHeight = 1f;
         RaycastHit2D raycastHit = Physics2D.Raycast(bxcoll.bounds.center, Vector2.down, bxcoll.bounds.extents.y + extraHeight, groundmask);
         Color Raycolor;
         if (raycastHit.collider != null)

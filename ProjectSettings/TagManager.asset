@@ -24,7 +24,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Camera
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 35360391
+    locked: 0
+  - name: Offscreen
+    uniqueID: 323094117
     locked: 0
