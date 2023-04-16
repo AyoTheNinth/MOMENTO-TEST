@@ -9,7 +9,11 @@ public class PlayerMove : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
     private BoxCollider2D bxcoll;
-  
+    public GameObject AltPlayer;
+    public GameObject Player;
+    public GameObject eyes;
+    public bool visionOn;
+    
 
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
@@ -23,12 +27,19 @@ public class PlayerMove : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         bxcoll = GetComponent<BoxCollider2D>();
 
+        
+
     }
+
 
     // Update is called once per frame
     private void Update()
     {
-         movX = Input.GetAxis("Horizontal");
+
+        //Debug.Log("Pixel width :" + cameraOutput.pixelWidth + " Pixel height : " + cameraOutput.pixelHeight);
+
+        movX = Input.GetAxis("Horizontal");
+
 
         rb.velocity = new Vector2(movX * moveSpeed, rb.velocity.y);
         
@@ -37,10 +48,11 @@ public class PlayerMove : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
-
-
        
 
+
+
+       //AllignSprites();
         AnimUpdate();
 
     }
@@ -62,6 +74,15 @@ public class PlayerMove : MonoBehaviour
         }
 
         anim.SetFloat("jumping", rb.velocity.y);
+
+        if (visionOn == true)
+        {
+            anim.SetBool("eyes", true);
+        }
+        else if(visionOn == false)
+        {
+            anim.SetBool("eyes", false);
+        }
 
     }
 
