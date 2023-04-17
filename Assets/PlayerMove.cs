@@ -75,14 +75,14 @@ public class PlayerMove : MonoBehaviour
 
         anim.SetFloat("jumping", rb.velocity.y);
 
-        if (visionOn == true)
-        {
-            anim.SetBool("eyes", true);
-        }
-        else if(visionOn == false)
-        {
-            anim.SetBool("eyes", false);
-        }
+        //if (visionOn == true)
+        //{
+        //    anim.SetBool("eyes", true);
+        //}
+        //else if(visionOn == false)
+        //{
+        //    anim.SetBool("eyes", false);
+        //}
 
     }
 
