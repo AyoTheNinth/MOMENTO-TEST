@@ -60,3 +60,6 @@ TagManager:
   - name: Offscreen
     uniqueID: 323094117
     locked: 0
+  - name: Options
+    uniqueID: 513880395
+    locked: 0
