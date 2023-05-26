@@ -45,9 +45,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 209991295
-    locked: 0
   - name: BG
     uniqueID: 1889084931
     locked: 0
@@ -59,6 +56,9 @@ TagManager:
     locked: 0
   - name: Offscreen
     uniqueID: 323094117
+    locked: 0
+  - name: UI
+    uniqueID: 209991295
     locked: 0
   - name: Options
     uniqueID: 513880395

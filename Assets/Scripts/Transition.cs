@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Transition : MonoBehaviour
 {
 
@@ -15,8 +16,9 @@ public class Transition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetButtonDown("Vision"))
         {
+            Debug.Log("Анимация пошла");
             anim.SetBool("IsTransition", true);
         }
         else

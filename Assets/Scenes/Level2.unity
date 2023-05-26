@@ -725,7 +725,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 35360391
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 1522362297, guid: 3acc3025fdebe314e84cc279f0f2388e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1084,6 +1084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyes: {fileID: 1672442325}
   visionOn: 0
+  staminaZero: 0
   staminabar: {fileID: 783077346}
 --- !u!95 &1555247419
 Animator:
@@ -1228,7 +1229,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 35360391
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1522362297, guid: 3acc3025fdebe314e84cc279f0f2388e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1378,7 +1379,7 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.196
   m_FrontSortingLayerID: 323094117
   m_BackSortingLayerID: 0
-  m_FrontSortingLayer: 5
+  m_FrontSortingLayer: 4
   m_BackSortingLayer: 0
   m_FrontSortingOrder: 0
   m_BackSortingOrder: 0
