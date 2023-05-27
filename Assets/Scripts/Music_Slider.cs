@@ -6,32 +6,30 @@ using UnityEngine;
 
 public class Music_Slider : MonoBehaviour
 {
-    public string volumeParameter = "MasterVolume";
-    public AudioMixer mixer;
-    public Slider slider;
 
-    private float _volumeValue;
-    private const float _multiplier_ = 20f;
+    [SerializeField] private AudioMixer myMixer;
+    [SerializeField] private Slider musicSlider;
 
-    private void Awake()
+    public void SetMusicVolue()
     {
-        slider.onValueChanged.AddListener(HandleSliderValueChanged);
+        float volume = musicSlider.value;
+        myMixer.SetFloat("MainVolume", Mathf.Log10(volume)*20);
+        PlayerPrefs.SetFloat("musicVolume", volume);
     }
-
-    private void HandleSliderValueChanged(float value)
+    private void LoadVolume()
     {
-        _volumeValue = Mathf.Log10(value) * _multiplier_;
-        mixer.SetFloat(volumeParameter, _volumeValue);
+        musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        SetMusicVolue();
     }
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        _volumeValue = PlayerPrefs.GetFloat(volumeParameter, Mathf.Log10(slider.value) * _multiplier_);
-        slider.value = Mathf.Pow(10f, _volumeValue / _multiplier_);
-    }
-
-    private void OnDisable()
-    {
-        PlayerPrefs.SetFloat(volumeParameter, _volumeValue);
+        if (PlayerPrefs.HasKey("musicVolume"))
+        {
+            LoadVolume();
+        }
+        else
+        {
+            SetMusicVolue();
+        }
     }
 }
