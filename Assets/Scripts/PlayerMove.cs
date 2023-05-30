@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
 
-    private float movX = 0f;
+    private float movX = 0;
     // Start is called before the first frame update
     private void Start()
     {
@@ -33,30 +33,31 @@ public class PlayerMove : MonoBehaviour
 
 
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
 
 
         movement();
-        jumping();
+        
         //AllignSprites();
-        AnimUpdate();
+       
 
+    }
+    private void Update()
+    {
+        AnimUpdate();
+        jumping();
     }
 
     private void movement()
     {
-        //float movX = Input.GetAxis("Horizontal");
-
-        //float moveVertical = Input.GetAxis("Vertical");
-
-        //Vector3 movement = new Vector3(movX, 0.0f, moveVertical);
-
-        //transform.Translate(movement * moveSpeed * Time.fixedDeltaTime);
-
-
         movX = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(movX * moveSpeed, rb.velocity.y);
+        Vector2 movement = new Vector2(movX, 0.0f);
+        transform.Translate(movement * moveSpeed * Time.fixedDeltaTime);
+        Debug.Log(movX);
+
+        //movX = Input.GetAxis("Horizontal");
+        //rb.velocity = new Vector2(movX * moveSpeed, rb.velocity.y);
     }
     private void jumping()
     {
@@ -74,22 +75,30 @@ public class PlayerMove : MonoBehaviour
         }
         else if (movX < 0f)
         {
-            anim.SetBool("running", true);
             sr.flipX = true;
+            anim.SetBool("running", true);
         }
         else
         {
             anim.SetBool("running", false);
         }
 
-        anim.SetFloat("jumping", rb.velocity.y);
+        if (rb.velocity.y != 0)
+        {
+            anim.SetFloat("jumping", rb.velocity.y);
+        }
+        else
+        {
+            anim.SetFloat("jumping", 0);
+        }
+        
 
         
     }
 
     private bool isGrounded()
     {
-        float extraHeight = 1f;
+        float extraHeight = 0.6f;
         RaycastHit2D raycastHit = Physics2D.Raycast(bxcoll.bounds.center, Vector2.down, bxcoll.bounds.extents.y + extraHeight, groundmask);
         Color Raycolor;
         if (raycastHit.collider != null)
