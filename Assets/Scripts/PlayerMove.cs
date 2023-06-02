@@ -26,9 +26,6 @@ public class PlayerMove : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         bxcoll = GetComponent<CapsuleCollider2D>();
-
-
-
     }
 
 
