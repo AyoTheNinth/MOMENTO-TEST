@@ -8,6 +8,7 @@ TagManager:
   - Vision
   - Ground
   - StaminaBar
+  - Transit
   layers:
   - Default
   - TransparentFX

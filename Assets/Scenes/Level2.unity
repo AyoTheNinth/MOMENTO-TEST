@@ -635,7 +635,6 @@ MonoBehaviour:
     m_Bits: 64
   AltPlayer: {fileID: 0}
   Player: {fileID: 0}
-  eyes: {fileID: 0}
   visionOn: 0
   moveSpeed: 6
   jumpForce: 15
@@ -1139,7 +1138,6 @@ MonoBehaviour:
     m_Bits: 64
   AltPlayer: {fileID: 0}
   Player: {fileID: 0}
-  eyes: {fileID: 0}
   visionOn: 0
   moveSpeed: 6
   jumpForce: 15

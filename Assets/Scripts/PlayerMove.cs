@@ -11,7 +11,6 @@ public class PlayerMove : MonoBehaviour
     private CapsuleCollider2D bxcoll;
     public GameObject AltPlayer;
     public GameObject Player;
-    public GameObject eyes;
     public bool visionOn;
 
 
@@ -51,7 +50,6 @@ public class PlayerMove : MonoBehaviour
         movX = Input.GetAxis("Horizontal");
         Vector2 movement = new Vector2(movX, 0.0f);
         transform.Translate(movement * moveSpeed * Time.fixedDeltaTime);
-        Debug.Log(movX);
 
         //movX = Input.GetAxis("Horizontal");
         //rb.velocity = new Vector2(movX * moveSpeed, rb.velocity.y);
@@ -88,6 +86,14 @@ public class PlayerMove : MonoBehaviour
         {
             anim.SetFloat("jumping", 0);
         }
+        if (isGrounded())
+        {
+            anim.SetBool("ground", true);
+        }
+        else
+        {
+            anim.SetBool("ground", false);
+        }
         
 
         
@@ -95,17 +101,11 @@ public class PlayerMove : MonoBehaviour
 
     private bool isGrounded()
     {
+        
+
         float extraHeight = 0.6f;
         RaycastHit2D raycastHit = Physics2D.Raycast(bxcoll.bounds.center, Vector2.down, bxcoll.bounds.extents.y + extraHeight, groundmask);
-        Color Raycolor;
-        if (raycastHit.collider != null)
-        {
-            Raycolor = Color.green;
-        }
-        else
-        {
-            Raycolor = Color.red;
-        }
+
         Debug.DrawRay(bxcoll.bounds.center, Vector2.down * (bxcoll.bounds.extents.y));
         return raycastHit.collider != null;
     }

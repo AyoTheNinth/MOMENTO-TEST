@@ -10,8 +10,11 @@ public class vision : MonoBehaviour
     public GameObject eyes;
     public bool visionOn;
     public bool staminaZero;
-    float totalStamina = 6;
-    float fullStamina = 6;
+    float totalStamina = 8;
+    float fullStamina = 8;
+
+    public GameObject eyesanims;
+    private Animator eyesanim;
 
     [SerializeField] public Slider staminabar;
 
@@ -21,11 +24,12 @@ public class vision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //staminabar = GameObject.FindGameObjectWithTag("StaminaBar").GetComponent<Slider>();
+
         anim = GetComponent<Animator>();
         eyes = GameObject.FindGameObjectWithTag("Vision");
         eyes.SetActive(false);
         visionOn = false;
+        eyesanim = eyesanims.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -82,7 +86,7 @@ public class vision : MonoBehaviour
         visionOn = true;
         eyes.SetActive(true);
         VisionOn_ev.Invoke();
-        //anim.SetBool("IsTransition", true);
+        eyesanim.SetBool("IsTransition", true);
 
     }
     private void SetVisionOff()
@@ -90,7 +94,7 @@ public class vision : MonoBehaviour
         visionOn = false;
         eyes.SetActive(false);
         VisionOff_ev.Invoke();
-        //anim.SetBool("IsTransition", false);
+        eyesanim.SetBool("IsTransition", false);
     }
 
     private void StaminaIsDepleting()
@@ -109,7 +113,8 @@ public class vision : MonoBehaviour
                 staminaZero = true;
                 visionOn = false;
                 SetVisionOff();
-                Debug.Log("Стамина кончилась");
+                eyesanim.SetBool("IsTransition", true);
+
             }
         }
         if (staminaZero == true || (totalStamina < fullStamina && visionOn == false))
