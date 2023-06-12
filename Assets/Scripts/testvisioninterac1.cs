@@ -2,32 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectInInverse : MonoBehaviour
+
+public class testvisioninterac1 : MonoBehaviour
 {
-    public GameObject child;
     private void OnDisable()
     {
-        Debug.Log("Объект подписался");
         vision.VisionOn_ev_alt += ShowObj;
-
-        
     }
     private void OnEnable()
     {
-        Debug.Log("Объект отписался");
         vision.VisionOn_ev_alt -= ShowObj;
         vision.VisionOff_ev_alt += HideObj;
     }
 
     private void HideObj()
     {
-        Debug.Log("Объект скрылся");
-        child.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     private void ShowObj()
     {
-        Debug.Log("Объект 2 появился");
-        child.SetActive(true);
+        gameObject.SetActive(true);
     }
 }

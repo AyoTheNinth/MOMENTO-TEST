@@ -21,6 +21,9 @@ public class vision : MonoBehaviour
     public static Action VisionOn_ev;
     public static Action VisionOff_ev;
 
+    public static Action VisionOn_ev_alt;
+    public static Action VisionOff_ev_alt;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +89,7 @@ public class vision : MonoBehaviour
         visionOn = true;
         eyes.SetActive(true);
         VisionOn_ev.Invoke();
+        VisionOn_ev_alt.Invoke();
         eyesanim.SetBool("IsTransition", true);
 
     }
@@ -94,6 +98,7 @@ public class vision : MonoBehaviour
         visionOn = false;
         eyes.SetActive(false);
         VisionOff_ev.Invoke();
+        VisionOff_ev_alt.Invoke();
         eyesanim.SetBool("IsTransition", false);
     }
 

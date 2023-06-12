@@ -9,9 +9,10 @@ public class PlayerMove : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
     private CapsuleCollider2D bxcoll;
-    public GameObject AltPlayer;
-    public GameObject Player;
+    private AudioSource audio;
     public bool visionOn;
+    public AudioClip step1;
+    public AudioClip step2;
 
 
     [SerializeField] private float moveSpeed = 7f;
@@ -21,6 +22,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
@@ -101,12 +103,19 @@ public class PlayerMove : MonoBehaviour
 
     private bool isGrounded()
     {
-        
-
         float extraHeight = 0.6f;
         RaycastHit2D raycastHit = Physics2D.Raycast(bxcoll.bounds.center, Vector2.down, bxcoll.bounds.extents.y + extraHeight, groundmask);
 
         Debug.DrawRay(bxcoll.bounds.center, Vector2.down * (bxcoll.bounds.extents.y));
         return raycastHit.collider != null;
+    }
+
+     private void Step()
+    {
+        audio.PlayOneShot(step1);
+    }
+    private void Step2()
+    {
+        audio.PlayOneShot(step1);
     }
 }

@@ -1084,6 +1084,7 @@ MonoBehaviour:
   eyes: {fileID: 1672442325}
   visionOn: 0
   staminaZero: 0
+  eyesanims: {fileID: 0}
   staminabar: {fileID: 783077346}
 --- !u!95 &1555247419
 Animator:
