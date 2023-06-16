@@ -34,4 +34,11 @@ public class SceneTransitor : MonoBehaviour
         PlayAnim = true;
         transitor.loadingscene.allowSceneActivation = true;
     }
+    public IEnumerator Fade()
+    {
+        anim.SetTrigger("FadeStart");
+        yield return new WaitForSeconds(1);
+        anim.SetTrigger("FadeEnd");
+
+    }
 }

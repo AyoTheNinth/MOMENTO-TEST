@@ -633,9 +633,9 @@ MonoBehaviour:
   groundmask:
     serializedVersion: 2
     m_Bits: 64
-  AltPlayer: {fileID: 0}
-  Player: {fileID: 0}
   visionOn: 0
+  step1: {fileID: 0}
+  step2: {fileID: 0}
   moveSpeed: 6
   jumpForce: 15
 --- !u!61 &1248598399
@@ -1137,9 +1137,9 @@ MonoBehaviour:
   groundmask:
     serializedVersion: 2
     m_Bits: 64
-  AltPlayer: {fileID: 0}
-  Player: {fileID: 0}
   visionOn: 0
+  step1: {fileID: 0}
+  step2: {fileID: 0}
   moveSpeed: 6
   jumpForce: 15
 --- !u!61 &1555247422
