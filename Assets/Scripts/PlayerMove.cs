@@ -5,14 +5,19 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private LayerMask groundmask;
+
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator anim;
     private CapsuleCollider2D bxcoll;
     private AudioSource audio;
+
     public bool visionOn;
+
     public AudioClip step1;
     public AudioClip step2;
+    public AudioClip jump;
+    public AudioClip land;
 
 
     [SerializeField] private float moveSpeed = 7f;
@@ -112,5 +117,13 @@ public class PlayerMove : MonoBehaviour
     private void Step2()
     {
         audio.PlayOneShot(step1);
+    }
+    private void JumpSound()
+    {
+        audio.PlayOneShot(jump);
+    }
+    private void LandSound()
+    {
+        audio.PlayOneShot(land);
     }
 }

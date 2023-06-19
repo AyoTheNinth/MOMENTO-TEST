@@ -23,13 +23,13 @@ public class PauseMenu : MonoBehaviour
         }
         
     }
-    private void Resume()
+    public void Resume()
     {
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
     }
-    private void Pause()
+    public void Pause()
     {
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
